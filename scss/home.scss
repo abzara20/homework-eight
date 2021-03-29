@@ -1,0 +1,26 @@
+.home{
+    background-color: darksalmon;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    .hero{
+        height: 300px;
+        width: 100%;
+        background-image: url(../images/book-hero.jfif);
+        background-size: cover;
+        background-position: center;
+        margin: 20px 0;
+    }
+    .top-three{
+        display: flex;
+        justify-content: space-around;
+        .preview{
+            .book-container{
+                height: 400px;
+                width:300px;
+                background-color: darkseagreen;
+            }
+        }
+        
+    }
+}

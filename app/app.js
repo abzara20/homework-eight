@@ -1,7 +1,15 @@
 var userVarName = "abi"
-var homeContent = "<h1>HOME</h1><p>This is a page</p>";
-var aboutContent = "<h1>ABOUT</h1><p>This is a page</p>";
 
+
+var homeContent = 
+`<div class= "home">
+    <h1>My Reading list</h1>
+    <p></p>
+</div>`;
+
+var aboutContent = "<h1>ABOUT</h1><p>This is a page</p>";
+var productContent = "<h1>PALICOES</h1><p>This is a page</p>";
+var contactContent = "<h1>PALAMUTES</h1><p>This is a page</p>";
 
 
 
