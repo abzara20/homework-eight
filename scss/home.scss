@@ -1,8 +1,25 @@
 .home{
-    background-color: darksalmon;
+    // background-color: darksalmon;
+    min-height: 950px;
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px
+    }
+    h3{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        color: cadetblue;
+    }
+    hr{
+        margin: -10px auto 20px auto;
+        height: 3px;
+        background-color: cadetblue;
+        width: 400px;
+    }
+
     .hero{
         height: 300px;
         width: 100%;
@@ -14,13 +31,47 @@
     .top-three{
         display: flex;
         justify-content: space-around;
+        margin-bottom: 20px;
         .preview{
+            width:300px;
             .book-container{
                 height: 400px;
-                width:300px;
+                width: 100%;
                 background-color: darkseagreen;
+                margin-bottom: 20px;
+            }
+            .final-fantasy{
+                background-image: url(../images/book-covers/manga-01.jfif);
+                background-size: cover;
+                background-position: center;
+            }
+            .awakening{
+                background-image: url(../images/book-covers/novel-04.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+            .beatrice{
+                background-image: url(../images/book-covers/manhua-02.jpg);
+                background-size: cover;
+                background-position: center;
             }
         }
-        
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .home{
+        padding: 15px;
+
+       .top-three{
+           justify-content: center;
+           align-items: center;
+           flex-direction: column;
+           
+           .preview{
+               margin-bottom: 20px;
+               padding-bottom: 15px;
+           }
+       }
     }
 }

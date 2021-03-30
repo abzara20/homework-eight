@@ -1,0 +1,41 @@
+.contact{
+    min-height: 950px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        .row{
+            margin: 20px 0;
+            input{
+                padding-left: 10px;
+                width:500px;
+                height: 30px;
+                border-radius: 5px;
+                border: 1px solid cadetblue;
+            }
+            textarea{
+                padding-left: 10px;
+                width:500px;
+                border-radius: 5px;
+                border: 1px solid cadetblue;
+            }
+        }
+        button{
+            margin: 0 auto;
+            border: none;
+            width: 80px;
+            height: 40px;
+            margin-bottom: 20px;
+            color: white;
+            background-color: cadetblue;
+            border-radius: 10px;
+        }
+    }
+}
+@media only screen and (max-width:900px) {
+    .contact{
+        padding: 15px;
+    }
+}

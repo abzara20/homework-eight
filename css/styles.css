@@ -20,24 +20,49 @@ p {
 }
 
 nav {
-  background-color: aquamarine;
-  margin: 20px auto;
-  height: 30px;
-  width: 800px;
+  background-color: darkseagreen;
+  margin: 0 auto 20px auto;
+  height: 60px;
+  max-width: 1200px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 nav a {
   text-decoration: none;
-  color: cornflowerblue;
+  color: black;
+}
+
+footer {
+  background-color: darkseagreen;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
 }
 
 .home {
-  background-color: darksalmon;
+  min-height: 950px;
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
+}
+.home h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+}
+.home h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: cadetblue;
+}
+.home hr {
+  margin: -10px auto 20px auto;
+  height: 3px;
+  background-color: cadetblue;
+  width: 400px;
 }
 .home .hero {
   height: 300px;
@@ -50,9 +75,256 @@ nav a {
 .home .top-three {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 20px;
+}
+.home .top-three .preview {
+  width: 300px;
 }
 .home .top-three .preview .book-container {
   height: 400px;
-  width: 300px;
+  width: 100%;
   background-color: darkseagreen;
+  margin-bottom: 20px;
+}
+.home .top-three .preview .final-fantasy {
+  background-image: url(../images/book-covers/manga-01.jfif);
+  background-size: cover;
+  background-position: center;
+}
+.home .top-three .preview .awakening {
+  background-image: url(../images/book-covers/novel-04.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.home .top-three .preview .beatrice {
+  background-image: url(../images/book-covers/manhua-02.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .home {
+    padding: 15px;
+  }
+  .home .top-three {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .home .top-three .preview {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+  }
+}
+.contact {
+  min-height: 950px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.contact .contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact-form .row {
+  margin: 20px 0;
+}
+.contact .contact-form .row input {
+  padding-left: 10px;
+  width: 500px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid cadetblue;
+}
+.contact .contact-form .row textarea {
+  padding-left: 10px;
+  width: 500px;
+  border-radius: 5px;
+  border: 1px solid cadetblue;
+}
+.contact .contact-form button {
+  margin: 0 auto;
+  border: none;
+  width: 80px;
+  height: 40px;
+  margin-bottom: 20px;
+  color: white;
+  background-color: cadetblue;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .contact {
+    padding: 15px;
+  }
+}
+.about {
+  min-height: 950px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.about h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+}
+.about .section-one .about-images {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+.about .section-one .about-images .image-container {
+  background-color: chocolate;
+  height: 400px;
+  width: 400px;
+}
+.about .section-two {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.about .section-two .image-container {
+  background-color: chocolate;
+  width: 500px;
+  height: 300px;
+}
+.about .section-two .text-container {
+  width: 500px;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .about {
+    padding: 15px;
+  }
+  .about .section-one .about-images {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about .section-one .about-images .image-container {
+    margin-bottom: 20px;
+  }
+}
+.library {
+  background-image: url(../images/library-girl.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.manga {
+  background-image: url(../images/manga.jfif);
+  background-size: cover;
+  background-position: center;
+}
+
+.pike {
+  background-image: url(../images/pike.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.books {
+  min-height: 950px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.books h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+}
+.books .section {
+  margin: 20px 0;
+}
+.books .section .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.books .section .container .book-item {
+  background-color: cornflowerblue;
+  width: 200px;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .books {
+    padding: 15px;
+  }
+}
+.webtoon-01 {
+  background-image: url(../images/book-covers/webtoon-01.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.webtoon-02 {
+  background-image: url(../images/book-covers/webtoon-02.jfif);
+  background-size: cover;
+  background-position: center;
+}
+
+.manhua-01 {
+  background-image: url(../images/book-covers/manhua-01.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.manhua-02 {
+  background-image: url(../images/book-covers/manhua-02.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.manga-01 {
+  background-image: url(../images/book-covers/manga-01.jfif);
+  background-size: cover;
+  background-position: center;
+}
+
+.manga-02 {
+  background-image: url(../images/book-covers/manga-02.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.manga-03 {
+  background-image: url(../images/book-covers/manga-03.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.manga-04 {
+  background-image: url(../images/book-covers/manga-04.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.novel-01 {
+  background-image: url(../images/book-covers/novel-01.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.novel-02 {
+  background-image: url(../images/book-covers/novel-02.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.novel-03 {
+  background-image: url(../images/book-covers/novel-03.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.novel-04 {
+  background-image: url(../images/book-covers/novel-04.jpg);
+  background-size: cover;
+  background-position: center;
 }
