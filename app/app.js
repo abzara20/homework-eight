@@ -193,7 +193,64 @@ var bookContent =
 </div>
 </div>`;
 
-var contactContent = ``;
+var contactContent = 
+`<div class="contact">
+<h1>Contact</h1>
+<div class="contact-hero"></div>
+<p>
+    <b>
+        Like reading a book I have on my list? Have a reccomendation for me?
+        I would love to hear about it, so please reach out and let me know!
+    </b>
+</p>
+<p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam 
+    consequuntur nesciunt temporibus vitae atque rem ad totam repudiandae, 
+    asperiores neque laborum laboriosam tenetur laudantium exercitationem 
+    debitis earum recusandae quidem dolores unde a beatae ex! Incidunt 
+    sequi accusamus nostrum quos. Excepturi!
+</p>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime 
+    omnis, totam debitis blanditiis odio, ea eveniet pariatur 
+    reprehenderit culpa eos dolores necessitatibus tempore aperiam 
+    facere non ratione officia magnam laboriosam.
+</p>
+<div class="container">
+    <div class="image-container">
+    </div>
+    <div class="contact-form">
+        <form>
+            <div class="row">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="row">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="row">
+                <textarea name="message" id="" cols="30" rows="10" placeholder="message"></textarea>
+            </div>
+        </form>
+        <button>Submit</button>
+    </div> 
+</div>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis 
+    eaque architecto impedit adipisci, illum corrupti praesentium 
+    possimus error. Nihil explicabo rem velit ipsam dolorem unde! 
+    Maiores, esse.
+</p>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis 
+    eaque architecto impedit adipisci, illum corrupti praesentium 
+    possimus error. Nihil explicabo rem velit ipsam dolorem unde! 
+    Maiores, esse. Lorem ipsum dolor sit amet consectetur, adipisicing 
+    elit. Excepturi, fugiat dolorum quibusdam hic nam nobis. Eligendi 
+    a numquam commodi omnis.
+</p>
+<p>Please add to my library!</p>
+<div class="cafe-image"></div>
+</div>`;
 
 
 

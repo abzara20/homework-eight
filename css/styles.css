@@ -122,27 +122,49 @@ footer {
   margin: 0 auto;
   text-align: center;
 }
-.contact .contact-form {
+.contact .contact-hero {
+  margin: 0 auto;
+  max-width: 800px;
+  height: 300px;
+  background-color: cadetblue;
+  margin-bottom: 30px;
+  background-image: url(../images/book-background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.contact .container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.contact .container .image-container {
+  background-image: url(../images/book-and-coffee.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 300px;
+  background-color: cadetblue;
+}
+.contact .container .contact-form {
   display: flex;
   flex-direction: column;
 }
-.contact .contact-form .row {
+.contact .container .contact-form .row {
   margin: 20px 0;
 }
-.contact .contact-form .row input {
+.contact .container .contact-form .row input {
   padding-left: 10px;
   width: 500px;
   height: 30px;
   border-radius: 5px;
   border: 1px solid cadetblue;
 }
-.contact .contact-form .row textarea {
+.contact .container .contact-form .row textarea {
   padding-left: 10px;
   width: 500px;
   border-radius: 5px;
   border: 1px solid cadetblue;
 }
-.contact .contact-form button {
+.contact .container .contact-form button {
   margin: 0 auto;
   border: none;
   width: 80px;
@@ -152,10 +174,20 @@ footer {
   background-color: cadetblue;
   border-radius: 10px;
 }
+.contact .cafe-image {
+  margin: 30px auto;
+  height: 300px;
+  max-width: 1000px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/book-cafe.jpg);
+}
 
 @media only screen and (max-width: 900px) {
   .contact {
     padding: 15px;
+  }
+  .contact .container {
+    flex-direction: column;
+    align-items: center;
   }
 }
 .about {
